@@ -1,0 +1,58 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 5;
+    justify-content: center;
+    align-items: center;
+    height: 64vh;
+    margin: 0;
+    background-color: #f8e9d6; /* Romantic background color */
+}
+
+.love-message, .and-message, .sorry-message {
+    text-align: center;
+}
+
+.love-text, .and-text, .sorry-text {
+    font-size: 34px;
+    margin: 0;
+}
+
+.love-text {
+    color: #ff2d55; /* Romantic red color */
+    animation: heartbeat 1.5s infinite;
+}
+
+.heart-icon {
+    color: #ff2d55; /* Romantic red color for the heart icon */
+    margin: 0 5px;
+    animation: rotateHeart 3s infinite linear; /* Rotation animation */
+}
+
+.and-text {
+    color: #333; /* Dark gray color for 'and' */
+}
+
+.sorry-text {
+    color: #009688; /* Teal color for 'I Am Sorry' */
+    animation: heartbeat 1.5s infinite alternate; /* Enhanced animation */
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes rotateHeart {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
